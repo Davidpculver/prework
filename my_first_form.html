@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My First HTML Form</title>
+</head>
+<body>
+	<h2>User Login</h2>
+	<form method="POST" action="https://request-inspector.glitch.me">
+		<div>
+        	<label for="username">Username</label>
+        	<input id="username" name="username" type="text" placeholder="Enter Username">
+    	</div>
+    	<div>
+	        <label for="password">Password</label>
+	        <input id="password" name="password" type="password" placeholder="Enter password">
+    	</div>
+    	<div>
+        	<button type="submit">Submit</button>
+    	</div>
+	</form>
+	<h2>Compose an Email</h2>
+	<form method="POST" action="https://request-inspector.glitch.me">
+		<div>
+			<label for="to">To</label>
+			<input type="text" name="to" id="to" placeholder="Recipiants email address">
+		</div>
+		<div>
+			<label for="from">From</label>
+			<input type="text" name="from" id="from" placeholder="My email address">
+		</div>
+		<div>
+			<label for="subject">Subject</label>
+			<input type="text" name="subject" id="subject">
+		</div>
+		<div>
+			<textarea name="body" id="body" placeholder="Type email here"></textarea>
+		</div>
+		<div>
+			<label for="save">Would you like to save a copy to your sent folder?</label>
+			<input type="checkbox" name="save" id="save" value="yes" checked="">
+		</div>
+		<div>
+			<button type="submit">Send Email</button>
+		</div>	
+	</form>
+	<h2>Multiple Choice Test</h2>
+	<form method="POST"	action="https://request-inspector.glitch.me">
+		<p>What kind of car do you drive?</p>
+		<div>
+			<label>
+			<input type="radio" name="car" value="Chevy">Chevy
+			</label>
+		</div>
+		<div>
+			<label>
+			<input type="radio" name="car" value="Ford">Ford
+			</label>
+		</div>
+		<div>
+			<label>
+			<input type="radio" name="car" value="Honda">Honda
+			</label>
+		</div>
+		<div>
+			<button type="submit">Submit answer</button>
+		</div>
+	</form>
+	<form method="POST"	action="https://request-inspector.glitch.me">
+		<p>What is your favorite condiment?</p>
+		<div>
+			<label>
+			<input type="radio" name="condiment" value="ketchup">Ketchup
+			</label>
+		</div>
+		<div>
+			<label>
+			<input type="radio" name="condiment" value="mustard">Mustard
+			</label>
+		</div>
+		<div>
+			<label>
+			<input type="radio" name="condiment" value="mayo">Mayo
+			</label>
+		</div>
+		<div>
+			<button type="submit">Submit answer</button>
+		</div>
+	</form>
+	<form method="POST" action="https://request-inspector.glitch.me">
+		<p>What do you have in your emergency bag?</p>
+		<div>
+			<label><input type="checkbox" name="bag[]" id="water" value="water">Water</label>
+		</div>
+		<div>
+			<label><input type="checkbox" name="bag[]" id="food" value="food">Food</label>
+		</div>
+		<div>	
+			<label><input type="checkbox" name="bag[]" id="matches" value="matches">Matches
+			</label>
+		</div>
+		<div>	
+			<label><input type="checkbox" name="bag[]" id="bandaids" value="bandaids">Bandaids
+			</label>
+		</div>
+		<div>
+			<button type="submit">Submit list</button>
+		</div>
+	</form>
+	<form method="POST" action="https://request-inspector.glitch.me">
+		<label for="emergency">What do you have in your emergency bag?</label>
+		<select id="emergency" name="emergency[]" multiple="">
+			<option value="water">Water</option>
+			<option value="food">food</option>
+			<option value="matches">matches</option>
+			<option value="bandaids">bandaids</option>
+		</select>
+		<div>
+			<button type="submit">Submit list</button>
+		</div>
+	</form>
+	<h2>Select Testing</h2>
+	<form method="POST" action="https://request-inspector.glitch.me">
+		<div>
+			<label for="winter">Do you like winter?</label>
+			<select id="winter" name="winter">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit list</button>
+		</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
